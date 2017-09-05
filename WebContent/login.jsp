@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login Form - LearnToday</title>
+</head>
+<body>
+<div class="container">
+<!-- Header section -->
+<header>
+<%@ include file="Headerjsp.jsp" %>
+</header>
+
+<article>
+<h1 class="page-header"> Login Form</h1>
+
+<form name="loginForm" class="form-horizontal" action="authenticateUser.jsp" method="post">
+<div class="form-group">
+<label class="col-md-2 control-label">User name :</label>
+<div class="col-md-4">
+  <input type="text" class="form-control" name="userName" required="required"/>
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-2 control-label">Password :</label>
+<div class="col-md-4">
+  <input type="password" class="form-control" name="password" required="required"/>
+</div>
+</div>
+
+<div class="form-group">
+ <div class="col-md-4 col-md-offset-2">
+    <input type="submit" name="btnRegister" value="Register" class="btn btn-primary">
+ </div>
+</div>
+
+</form>
+</
+</article>
+
+<!-- Footer section -->
+<footer>
+<%@ include file="footer.jsp" %>
+</footer>
+
+</div>
+</body>
+</html>
